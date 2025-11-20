@@ -1,7 +1,7 @@
 #!/bin/bash
 x=$(( 6 + RANDOM % (7 - 0 + 1) ))
 echo "guess a number from 0 to 14:"
-read -p "Enter the value you guest: " y
+read -r -p "Enter the value you guest: " y
 if [[ $y -eq $x ]]; then
 echo "you win"
 elif [[ $y -lt $x ]]; then
